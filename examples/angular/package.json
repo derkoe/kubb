@@ -1,0 +1,59 @@
+{
+  "name": "angular-petstore",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Angular PetStore example",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kubb-labs/kubb.git",
+    "directory": "packages/examples/angular"
+  },
+  "license": "MIT",
+  "author": "derkoe",
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "generate": "kubb generate",
+    "typecheck": "tsc -p ./tsconfig.json --noEmit --emitDeclarationOnly false"
+  },
+  "dependencies": {
+    "@angular/common": "^20.0.0",
+    "@angular/compiler": "^20.0.0",
+    "@angular/core": "^20.0.0",
+    "@angular/forms": "^20.0.0",
+    "@angular/platform-browser": "^20.0.0",
+    "@angular/router": "^20.0.0",
+    "@kubb/cli": "workspace:*",
+    "@kubb/core": "workspace:*",
+    "@kubb/plugin-client": "workspace:*",
+    "@kubb/plugin-oas": "workspace:*",
+    "@kubb/plugin-angular": "workspace:*",
+    "@kubb/plugin-ts": "workspace:*",
+    "@kubb/plugin-zod": "workspace:*",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^20.0.4",
+    "@angular/cli": "^20.0.4",
+    "@angular/compiler-cli": "^20.0.0",
+    "@types/jasmine": "~5.1.0",
+    "jasmine-core": "~5.7.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "catalog:"
+  },
+  "packageManager": "pnpm@9.15.5",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=8.15.0"
+  }
+}
